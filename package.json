@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/seiyria/censor-sensor#readme",
   "devDependencies": {
-    "@types/node": "^9.4.6",
+    "@types/node": "^20.8.7",
     "ava-ts": "^0.24.2",
     "awesome-typescript-loader": "^3.4.1",
     "ts-node": "^4.1.0",
