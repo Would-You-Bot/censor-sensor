@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^20.8.7
     version: 20.8.7
   ava-ts:
-    specifier: ^0.24.2
-    version: 0.24.6(ava@0.25.0)(ts-node@6.2.0)
+    specifier: ^0.25.2
+    version: 0.25.2(ava@0.25.0)(ts-node@6.2.0)
   awesome-typescript-loader:
     specifier: ^3.4.1
     version: 3.5.0(typescript@2.9.2)
@@ -351,6 +351,15 @@ packages:
       normalize-path: 2.1.1
     dev: true
 
+  /anymatch@2.0.0(supports-color@5.5.0):
+    resolution: {integrity: sha512-5teOsQWABXHHBFP9y3skS5P3d/WfWXpv3FUpy+LorMrNYaT9pI4oLMQX7jzQ2KklNpGpWHzdCXTDT2Y3XGlZBw==}
+    dependencies:
+      micromatch: 3.1.10(supports-color@5.5.0)
+      normalize-path: 2.1.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /argparse@1.0.10:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
     dependencies:
@@ -452,18 +461,19 @@ packages:
       write-pkg: 3.2.0
     dev: true
 
-  /ava-ts@0.24.6(ava@0.25.0)(ts-node@6.2.0):
-    resolution: {integrity: sha512-a3TOJWNQ8LSuc+i0ybp73D2QtgaQ6Mc8o5ZZnjY7cECqr1i0B1sk+6cGqncoNYuZ4YhqrEZs7BFc/vHFGSqiLw==}
+  /ava-ts@0.25.2(ava@0.25.0)(ts-node@6.2.0):
+    resolution: {integrity: sha512-xzZmtK8JTULDUj0xJwBixmgD8QKYK61yHTA73KDkvsjtQ+BNxMtG9J2oDbOU8IPhw02p7Jmg3RSp0vTDrHEWTQ==}
     engines: {node: '>=4'}
     hasBin: true
     peerDependencies:
       ava: 0.*
-      ts-node: ^3.0.0 || ^4.0.1 || ^5.0.0 || ^6.0.0
+      ts-node: ^3.0.0 || ^4.0.1 || ^5.0.0 || ^6.0.0 || ^7.0.0
     dependencies:
       '@ava/babel-preset-stage-4': 1.1.0(supports-color@5.5.0)
       '@ava/babel-preset-transform-test-files': 3.0.0
       '@ava/write-file-atomic': 2.2.0
       '@concordance/react': 1.0.0
+      '@ladjs/time-require': 0.1.4
       ansi-escapes: 3.2.0
       ansi-styles: 3.2.1
       arr-flatten: 1.1.0
@@ -479,7 +489,7 @@ packages:
       bluebird: 3.7.2
       caching-transform: 1.0.1
       chalk: 2.4.2
-      chokidar: 1.7.0(supports-color@5.5.0)
+      chokidar: 2.1.8(supports-color@5.5.0)
       clean-stack: 1.3.0
       clean-yaml-object: 0.1.0
       cli-cursor: 2.1.0
@@ -511,7 +521,6 @@ packages:
       is-obj: 1.0.1
       is-observable: 1.1.0
       is-promise: 2.2.2
-      js-yaml: 3.14.1
       last-line-stream: 1.0.0
       lodash.clonedeepwith: 4.5.0
       lodash.debounce: 4.0.8
@@ -539,8 +548,8 @@ packages:
       stack-utils: 1.0.5
       strip-ansi: 4.0.0
       strip-bom-buf: 1.0.0
+      supertap: 1.0.0
       supports-color: 5.5.0
-      time-require: 0.1.2
       trim-off-newlines: 1.0.3
       ts-node: 6.2.0
       unique-temp-dir: 1.0.0
@@ -1198,6 +1207,27 @@ packages:
       is-glob: 2.0.1
       path-is-absolute: 1.0.1
       readdirp: 2.2.1(supports-color@5.5.0)
+    optionalDependencies:
+      fsevents: 1.2.13
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /chokidar@2.1.8(supports-color@5.5.0):
+    resolution: {integrity: sha512-ZmZUazfOzf0Nve7duiCKD23PFSCs4JPoYyccjUFF3aQkQadqBhfzhjkwBH2mNOG9cTBwhamM37EIsIkZw3nRgg==}
+    deprecated: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+    dependencies:
+      anymatch: 2.0.0(supports-color@5.5.0)
+      async-each: 1.0.6
+      braces: 2.3.2(supports-color@5.5.0)
+      glob-parent: 3.1.0
+      inherits: 2.0.4
+      is-binary-path: 1.0.1
+      is-glob: 4.0.3
+      normalize-path: 3.0.0
+      path-is-absolute: 1.0.1
+      readdirp: 2.2.1(supports-color@5.5.0)
+      upath: 1.2.0
     optionalDependencies:
       fsevents: 1.2.13
     transitivePeerDependencies:
@@ -1909,6 +1939,13 @@ packages:
       is-glob: 2.0.1
     dev: true
 
+  /glob-parent@3.1.0:
+    resolution: {integrity: sha512-E8Ak/2+dZY6fnzlR7+ueWvhsH1SjHr4jjss4YS/h4py44jY9MhK/VFdaZJAWDz6BbL21KeteKxFSFpq8OS5gVA==}
+    dependencies:
+      is-glob: 3.1.0
+      path-dirname: 1.0.2
+    dev: true
+
   /glob-to-regexp@0.4.1:
     resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
     dev: true
@@ -2284,6 +2321,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /is-extglob@2.1.1:
+    resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
   /is-finite@1.1.0:
     resolution: {integrity: sha512-cdyMtqX/BOqqNBBiKlIVkytNHm49MtMlYyn1zxzvJKWmFMlGzm+ry5BBfYyeY9YmNKbRSo/o7OX9w9ale0wg3w==}
     engines: {node: '>=0.10.0'}
@@ -2304,6 +2346,20 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       is-extglob: 1.0.0
+    dev: true
+
+  /is-glob@3.1.0:
+    resolution: {integrity: sha512-UFpDDrPgM6qpnFNI+rh/p3bUaq9hKLZN8bMUWzxmcnZVS3omf4IPK+BrewlnWjO1WmUsMYuSjKh4UJuV4+Lqmw==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      is-extglob: 2.1.1
+    dev: true
+
+  /is-glob@4.0.3:
+    resolution: {integrity: sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      is-extglob: 2.1.1
     dev: true
 
   /is-installed-globally@0.1.0:
@@ -2897,6 +2953,11 @@ packages:
       remove-trailing-separator: 1.1.0
     dev: true
 
+  /normalize-path@3.0.0:
+    resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
   /npm-run-path@2.0.2:
     resolution: {integrity: sha512-lJxZYlT4DW/bRUtFh1MQIWqmLwQfAxnqWG4HhEdjMlkrJYnJn0Jrr2u3mgxqaWsdiBc76TYkTG/mhrnYTuzfHw==}
     engines: {node: '>=4'}
@@ -3077,6 +3138,10 @@ packages:
   /pascalcase@0.1.1:
     resolution: {integrity: sha512-XHXfu/yOQRy9vYOtUDVMN60OEJjW013GoObG1o+xwQTpB9eYJX/BjXMsdW13ZDPruFhYYn0AG22w0xgQMwl3Nw==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /path-dirname@1.0.2:
+    resolution: {integrity: sha512-ALzNPpyNq9AqXMBjeymIjFDAkAFH06mHJH/cSBHAgU0s4vfpBn6b2nf8tiRLvagKD8RbTpq2FKTBg7cl9l3c7Q==}
     dev: true
 
   /path-exists@2.1.0:
@@ -3876,16 +3941,6 @@ packages:
       xtend: 4.0.2
     dev: true
 
-  /time-require@0.1.2:
-    resolution: {integrity: sha512-IqcSpa1sVNleRbC9eHnN7p7vwEHNmsjsXUDqjlnvo4+2VLJ7/gIY2XACTBuRhMB4weYbDYKsR3av2ySykRhDIA==}
-    engines: {node: '>= 0.10.0'}
-    dependencies:
-      chalk: 0.4.0
-      date-time: 0.1.1
-      pretty-ms: 0.2.2
-      text-table: 0.2.0
-    dev: true
-
   /time-zone@1.0.0:
     resolution: {integrity: sha512-TIsDdtKo6+XrPtiTm1ssmMngN1sAhyKnTO2kunQWqNPWIVvCm15Wmw4SWInwTVgJ5u/Tr04+8Ei9TNcw4x4ONA==}
     engines: {node: '>=4'}
@@ -4006,6 +4061,11 @@ packages:
 
   /unzip-response@2.0.1:
     resolution: {integrity: sha512-N0XH6lqDtFH84JxptQoZYmloF4nzrQqqrAymNj+/gW60AO2AZgOcf4O/nUXJcYfyQkqvMo9lSupBZmmgvuVXlw==}
+    engines: {node: '>=4'}
+    dev: true
+
+  /upath@1.2.0:
+    resolution: {integrity: sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==}
     engines: {node: '>=4'}
     dev: true
 
