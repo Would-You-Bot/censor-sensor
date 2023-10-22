@@ -28,7 +28,7 @@
     "@types/node": "^9.4.6",
     "ava-ts": "^0.24.2",
     "awesome-typescript-loader": "^3.4.1",
-    "ts-node": "^4.1.0",
+    "ts-node": "^6.2.0",
     "typescript": "^2.7.2",
     "webpack": "^3.11.0"
   },
