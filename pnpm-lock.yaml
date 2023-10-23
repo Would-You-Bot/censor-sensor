@@ -13,13 +13,13 @@ devDependencies:
     version: 0.25.2(ava@0.25.0)(ts-node@6.2.0)
   awesome-typescript-loader:
     specifier: ^5.2.1
-    version: 5.2.1(typescript@2.9.2)
+    version: 5.2.1(typescript@3.9.10)
   ts-node:
     specifier: ^6.2.0
     version: 6.2.0
   typescript:
-    specifier: ^2.7.2
-    version: 2.9.2
+    specifier: ^3.9.10
+    version: 3.9.10
   webpack:
     specifier: ^5.89.0
     version: 5.89.0
@@ -646,7 +646,7 @@ packages:
       update-notifier: 2.5.0
     dev: true
 
-  /awesome-typescript-loader@5.2.1(typescript@2.9.2):
+  /awesome-typescript-loader@5.2.1(typescript@3.9.10):
     resolution: {integrity: sha512-slv66OAJB8orL+UUaTI3pKlLorwIvS4ARZzYR9iJJyGsEgOqueMfOMdKySWzZ73vIkEe3fcwFgsKMg4d8zyb1g==}
     peerDependencies:
       typescript: ^2.7 || ^3
@@ -658,7 +658,7 @@ packages:
       micromatch: 3.1.10(supports-color@5.5.0)
       mkdirp: 0.5.6
       source-map-support: 0.5.21
-      typescript: 2.9.2
+      typescript: 3.9.10
       webpack-log: 1.2.0
     transitivePeerDependencies:
       - supports-color
@@ -4087,8 +4087,8 @@ packages:
     resolution: {integrity: sha512-dzlvlNlt6AXU7EBSfpAscydQ7gXB+pPGsPnfJnZpiNJBDj7IaJzQlBZYGdEi4R9HmPdBv2XmWJ6YUtoTa7lmCw==}
     dev: true
 
-  /typescript@2.9.2:
-    resolution: {integrity: sha512-Gr4p6nFNaoufRIY4NMdpQRNmgxVIGMs4Fcu/ujdYk3nAZqk7supzBE9idmvfZIlH/Cuj//dvi+019qEue9lV0w==}
+  /typescript@3.9.10:
+    resolution: {integrity: sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
