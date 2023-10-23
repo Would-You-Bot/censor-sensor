@@ -10,13 +10,13 @@ devDependencies:
     version: 20.8.7
   ava-ts:
     specifier: ^0.25.2
-    version: 0.25.2(ava@0.25.0)(ts-node@6.2.0)
+    version: 0.25.2(ava@0.25.0)(ts-node@7.0.1)
   awesome-typescript-loader:
     specifier: ^5.2.1
     version: 5.2.1(typescript@2.9.2)
   ts-node:
-    specifier: ^6.2.0
-    version: 6.2.0
+    specifier: ^7.0.1
+    version: 7.0.1
   typescript:
     specifier: ^2.7.2
     version: 2.9.2
@@ -461,7 +461,7 @@ packages:
       write-pkg: 3.2.0
     dev: true
 
-  /ava-ts@0.25.2(ava@0.25.0)(ts-node@6.2.0):
+  /ava-ts@0.25.2(ava@0.25.0)(ts-node@7.0.1):
     resolution: {integrity: sha512-xzZmtK8JTULDUj0xJwBixmgD8QKYK61yHTA73KDkvsjtQ+BNxMtG9J2oDbOU8IPhw02p7Jmg3RSp0vTDrHEWTQ==}
     engines: {node: '>=4'}
     hasBin: true
@@ -551,7 +551,7 @@ packages:
       supertap: 1.0.0
       supports-color: 5.5.0
       trim-off-newlines: 1.0.3
-      ts-node: 6.2.0
+      ts-node: 7.0.1
       unique-temp-dir: 1.0.0
       update-notifier: 2.5.0
     dev: true
@@ -4064,8 +4064,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /ts-node@6.2.0:
-    resolution: {integrity: sha512-ZNT+OEGfUNVMGkpIaDJJ44Zq3Yr0bkU/ugN1PHbU+/01Z7UV1fsELRiTx1KuQNvQ1A3pGh3y25iYF6jXgxV21A==}
+  /ts-node@7.0.1:
+    resolution: {integrity: sha512-BVwVbPJRspzNh2yfslyT1PSbl5uIk03EZlb493RKHN4qej/D06n1cEhjlOJG69oFsE7OT8XjpTUcYf6pKTLMhw==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dependencies:
